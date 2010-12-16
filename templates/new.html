@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block main %}
+<form action="/save" method="POST">
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" name="title"/></td>
+        </tr>
+        <tr>
+            <td>Author:</td>
+            <td><input type="text" name="author"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add"></td>
+        </tr>
+    </table>
+</form>
+<br/>
+<a href="/">Back</a>
+{% endblock %} 

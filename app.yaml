@@ -1,0 +1,10 @@
+application: bookistapp
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /style
+  static_dir: style
+- url: /.*
+  script: books.py

@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block main %}
+Welcome {{ user }}!
+<br/><br/>
+Menu:<br/>
+<a href="/list">Book list</a><br/>
+<a href="/new">New book</a><br/>
+<a href="{{ logoutUrl }}">Logout</a>
+{% endblock %}
